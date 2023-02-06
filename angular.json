@@ -3,5 +3,37 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "marvel-components-lib": {
+      "projectType": "library",
+      "root": "projects/marvel-components-lib",
+      "sourceRoot": "projects/marvel-components-lib/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/marvel-components-lib/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/marvel-components-lib/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/marvel-components-lib/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/marvel-components-lib/src/test.ts",
+            "tsConfig": "projects/marvel-components-lib/tsconfig.spec.json",
+            "karmaConfig": "projects/marvel-components-lib/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "marvel-components-lib"
 }
