@@ -1,14 +1,14 @@
 import { MatButtonModule } from '@angular/material/button';
 import { NgModule } from '@angular/core';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 
 import { MarvelComponentLibraryComponent } from './marvel-component-library.component';
 import { CardComponent } from './hero/card/card.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [MarvelComponentLibraryComponent, CardComponent],
-  imports: [BrowserAnimationsModule, MatCardModule, MatButtonModule],
+  imports: [CommonModule, MatCardModule, MatButtonModule],
   exports: [MarvelComponentLibraryComponent, CardComponent],
 })
 export class MarvelComponentLibraryModule {}

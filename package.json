@@ -1,6 +1,6 @@
 {
   "name": "marvel-library",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -11,7 +11,7 @@
     "test-lib": "ng test marvel-component-lib",
     "lint-lib": "ng lint marvel-component-lib"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "~12.2.0",
     "@angular/cdk": "^12.2.13",
