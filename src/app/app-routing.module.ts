@@ -1,7 +1,10 @@
+import { HeroCardComponent } from './pages/hero-card/hero-card.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: 'hero-card', component: HeroCardComponent },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

@@ -1,0 +1,14 @@
+<mat-card class="hero-card">
+  <mat-card-header>
+    <mat-card-title class="card-title">{{ cardTitle }}</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image [src]="cardImage" [alt]="cardImageAlt" />
+  <mat-card-content>
+    <p>
+      {{ cardDescription }}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button class="detail-button" mat-button>Detail</button>
+  </mat-card-actions>
+</mat-card>

@@ -1,0 +1,27 @@
+.hero-card {
+    width: 270px;
+    padding: 15px;
+  }
+
+  .card-title{
+    margin-left: -16px;
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  img{
+    height: 260px;
+    width: 260px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 5px solid #f0131e;
+    margin: 0px 0px 15px 0px;
+  }
+
+  .detail-button{
+    width: 100%;
+    font-size: 20px;
+    line-height: 24px;
+    background: linear-gradient(180deg, #34f1e8, #00b9b0);
+    padding: 6px;
+  }
