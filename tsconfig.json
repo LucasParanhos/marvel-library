@@ -10,9 +10,9 @@
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "paths": {
-      "marvel-components-lib": [
-        "dist/marvel-components-lib/marvel-components-lib",
-        "dist/marvel-components-lib"
+      "marvel-component-library": [
+        "dist/marvel-component-library/marvel-component-library",
+        "dist/marvel-component-library"
       ]
     },
     "declaration": false,

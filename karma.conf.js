@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, '../../coverage/marvel-components-lib'),
+      dir: require('path').join(__dirname, './coverage/marvel-library'),
       subdir: '.',
       reporters: [
         { type: 'html' },

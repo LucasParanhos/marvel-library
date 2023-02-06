@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class MarvelComponentsLibService {
+export class MarvelComponentLibraryService {
 
   constructor() { }
 }

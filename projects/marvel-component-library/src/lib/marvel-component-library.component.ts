@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'lib-marvel-components-lib',
+  selector: 'lib-marvel-component-library',
   template: `
     <p>
-      marvel-components-lib works!
+      marvel-component-library works!
     </p>
   `,
   styles: [
   ]
 })
-export class MarvelComponentsLibComponent implements OnInit {
+export class MarvelComponentLibraryComponent implements OnInit {
 
   constructor() { }
 

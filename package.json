@@ -6,10 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "build-lib": "ng build marvel-components-lib --configuration development",
-    "test-lib": "ng test marvel-components-lib",
-    "lint-lib": "ng lint marvel-components-lib"
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {
@@ -26,7 +23,7 @@
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~12.2.18",
+    "@angular-devkit/build-angular": "~12.2.5",
     "@angular/cli": "~12.2.5",
     "@angular/compiler-cli": "~12.2.0",
     "@types/jasmine": "~3.8.0",
