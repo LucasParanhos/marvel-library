@@ -1,6 +1,6 @@
 <mat-card class="hero-card">
   <mat-card-header>
-    <mat-card-title class="card-title">{{ cardTitle }}</mat-card-title>
+    <mat-card-title class="card-title" [title]="cardTitle">{{ cardTitle }}</mat-card-title>
   </mat-card-header>
   <div mat-card-image class="card-conteiner">
     <img [src]="cardImage" [alt]="cardImageAlt" />
