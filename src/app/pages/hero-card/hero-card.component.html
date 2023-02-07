@@ -1,6 +1,24 @@
+<div class="card-wrapper">
+
 <lib-hero-card
   [cardTitle]="mockCardData.cardTitle"
   [cardImageAlt]="mockCardData.cardImageAlt"
   [cardImage]="mockCardData.cardImage"
   [cardDescription]="mockCardData.cardDescription"
 ></lib-hero-card>
+
+<lib-hero-card
+  [cardTitle]="mockCardData.cardTitle"
+  [cardImageAlt]="mockCardData.cardImageAlt"
+  [cardImage]="mockCardData.cardImage"
+  [cardDescription]="mockCardData.cardDescription + mockCardData.cardDescription"
+></lib-hero-card>
+
+
+<lib-hero-card
+  [cardTitle]="mockCardData.cardTitle"
+  [cardImageAlt]="mockCardData.cardImageAlt"
+  [cardImage]="mockCardData.cardImage"
+></lib-hero-card>
+
+</div>

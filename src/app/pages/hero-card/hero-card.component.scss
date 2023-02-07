@@ -1,0 +1,11 @@
+::ng-deep {
+  .card-wrapper {
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    .hero-card {
+      margin-bottom: 30px;
+    }
+  }
+}

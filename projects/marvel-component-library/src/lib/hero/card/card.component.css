@@ -9,13 +9,25 @@
     line-height: 32px;
   }
 
+  .card-conteiner{
+    height: 260px;
+    width: 260px;
+    margin: 0px 0px 15px 0px;
+    border-radius: 15px;
+    border: 5px solid #f0131e;
+    overflow: hidden;
+  }
+
   img{
     height: 260px;
     width: 260px;
     object-fit: cover;
-    border-radius: 15px;
-    border: 5px solid #f0131e;
-    margin: 0px 0px 15px 0px;
+    transition: transform 0.5s ease;
+  }
+
+  img:hover {
+    transform: scale(1.5);
+    cursor: zoom-in;
   }
 
   .detail-button{
@@ -25,3 +37,31 @@
     background: linear-gradient(180deg, #34f1e8, #00b9b0);
     padding: 6px;
   }
+
+  .card-description{
+    height: 150px;
+    overflow-y: auto;
+  }
+
+ .card-description::-webkit-scrollbar-track
+  {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #6e6e6e;
+  }
+
+
+.card-description::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #6e6e6e;
+  border-radius: 10px;
+}
+
+.card-description::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #1f1f1f;
+}
+

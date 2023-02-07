@@ -2,9 +2,11 @@
   <mat-card-header>
     <mat-card-title class="card-title">{{ cardTitle }}</mat-card-title>
   </mat-card-header>
-  <img mat-card-image [src]="cardImage" [alt]="cardImageAlt" />
+  <div mat-card-image class="card-conteiner">
+    <img [src]="cardImage" [alt]="cardImageAlt" />
+  </div>
   <mat-card-content>
-    <p>
+    <p *ngIf="cardDescription" class="card-description">
       {{ cardDescription }}
     </p>
   </mat-card-content>
