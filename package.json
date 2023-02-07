@@ -7,9 +7,9 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "build-lib": "ng build marvel-component-lib --configuration development",
-    "test-lib": "ng test marvel-component-lib",
-    "lint-lib": "ng lint marvel-component-lib"
+    "build-lib": "ng build marvel-component-library",
+    "test-lib": "ng test marvel-component-library",
+    "lint-lib": "ng lint marvel-component-library"
   },
   "private": false,
   "dependencies": {
