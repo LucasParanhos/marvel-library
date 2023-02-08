@@ -1,23 +1,22 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'lib-hero-card',
   templateUrl: './card.component.html',
-  styleUrls: ['./card.component.css']
+  styleUrls: ['./card.component.css'],
 })
-export class CardComponent implements OnInit {
+export class CardComponent {
+  @Input() cardTitle: string = '';
+  @Input() cardImageAlt: string = '';
+  @Input() cardImage: string = '';
+  @Input() cardDescription: string = '';
+  @Input() cardDataId: string = '';
+  @Input() cardButtonText: string = 'Detail';
+  @Input() buttonFunction: (args: string) => void = () => {};
 
-  @Input() cardTitle :string = '';
-  @Input() cardImageAlt :string = '';
-  @Input() cardImage :string = '';
-  @Input() cardDescription :string = '';
+  @Output() clickEmitter: EventEmitter<any> = new EventEmitter<any>();
 
-
-  constructor() {
-
-   }
-
-  ngOnInit(): void {
+  emitClick(id: string) {
+    this.clickEmitter.emit(this.buttonFunction(id));
   }
-
 }

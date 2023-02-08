@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './hero-card.component.html',
   styleUrls: ['./hero-card.component.scss'],
 })
-export class HeroCardComponent implements OnInit {
+export class HeroCardComponent {
   mockCardData = {
     cardTitle: 'Spider Man',
     cardImageAlt: 'Spider Man Casting a Web',
@@ -23,7 +23,7 @@ export class HeroCardComponent implements OnInit {
     Hey there, there goes the Spiderman`,
   };
 
-  constructor() {}
-
-  ngOnInit(): void {}
+  buttonFunction = (id: string) => {
+    console.log('clicked: ', id);
+  };
 }

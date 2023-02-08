@@ -11,6 +11,6 @@
     </p>
   </mat-card-content>
   <mat-card-actions>
-    <button class="detail-button" mat-button>Detail</button>
+    <button (click)="emitClick(cardDataId)" class="detail-button" mat-button>{{cardButtonText}}</button>
   </mat-card-actions>
 </mat-card>
